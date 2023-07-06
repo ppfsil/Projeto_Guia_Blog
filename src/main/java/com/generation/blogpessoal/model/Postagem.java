@@ -79,5 +79,7 @@ public class Postagem {
 	public void setData(LocalDateTime data) {
 		this.data = data;
 	}
-
+	@ManyToOne
+	@JsonIgnoreProperties("postagem")
+	private Usuario usuario;
 }
